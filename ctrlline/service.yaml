@@ -4,10 +4,10 @@ metadata:
   name: ctrlline-api-service
   namespace: dev
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: ctrlline-api
   ports:
   - name: ctrlline-api-port
-    port: 8088
-    targetPort: 8088
+    port: 30084
+    targetPort: 30084
