@@ -25,6 +25,11 @@ spec:
             cpu: "1000m"
         ports:
         - containerPort: 8088
+        envFrom:
+          - configMapRef:
+              name: ctrlline-config
+          - secretRef:
+              name: ctrlline-secret
         # startupProbe:
         #   httpGet:
         #     path: /actuator/health
