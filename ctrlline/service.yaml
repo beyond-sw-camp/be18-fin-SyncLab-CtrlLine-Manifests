@@ -11,4 +11,4 @@ spec:
   - name: ctrlline-api-port
     port: 8088
     targetPort: 8088
-    NodePort: 30084
+    nodePort: 30084
