@@ -28,6 +28,8 @@ spec:
         envFrom:
           - configMapRef:
               name: ctrlline-config
+          - configMapRef:
+              name: global-config
           - secretRef:
               name: ctrlline-secret
         # startupProbe:
