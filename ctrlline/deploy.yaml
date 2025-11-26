@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: ctrlline-api
-        image: synklabshareacc/ctrlline-staging:c567af
+        image: synklabshareacc/ctrlline-staging:0137ab
         resources:
           requests:
             memory: "512Mi"
