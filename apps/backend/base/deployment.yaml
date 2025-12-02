@@ -22,3 +22,22 @@ spec:
           image: REPLACE_IMAGE
           ports:
             - containerPort: 8080
+          
+          args:
+            - "--spring.profiles.active=prod"
+          
+          volumeMounts:
+            - name: spring-prod-config-volume
+              mountPath: /config/application-prod.yml
+              subPath: application-prod.yml
+          
+          envFrom:
+            - secretRef:
+                name: spring-secret
+            - configMapRef:
+                name: spring-config
+
+      volumes:
+        - name: spring-prod-config-volume
+          configMap:
+            name: spring-prod-config
