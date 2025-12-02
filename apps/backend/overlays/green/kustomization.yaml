@@ -1,0 +1,7 @@
+resources:
+  - ../../base
+
+nameSuffix: -green
+
+patches:
+  - path: image-patch.yaml
