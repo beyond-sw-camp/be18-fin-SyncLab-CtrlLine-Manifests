@@ -1,9 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-green
+  name: backend
+  labels:
+    color: green
 spec:
+  selector:
+    matchLabels:
+      app: backend
   template:
+    metadata:
+        labels:
+          app: backend
+          color: green
     spec:
       containers:
         - name: backend
