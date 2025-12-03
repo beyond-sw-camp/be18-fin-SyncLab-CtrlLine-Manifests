@@ -13,6 +13,10 @@ metadata:
     alb.ingress.kubernetes.io/ssl-redirect: '443'
 
 spec:
+  tls:
+    - hosts:
+        - backend.ctrlline.shop
+      secretName: dummy-tls-secret   # 아무 이름이나 OK, 실제로 쓰이지 않는다
   rules:
     - host: backend.ctrlline.shop
       http:
