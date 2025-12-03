@@ -36,6 +36,8 @@ spec:
                 name: spring-secret
             - configMapRef:
                 name: spring-config
+            - configMapRef:
+                name: spring-env-config
 
       volumes:
         - name: spring-prod-config-volume
