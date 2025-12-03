@@ -6,5 +6,5 @@ spec:
   selector:
     color: blue   # 기본 BLUE로 시작
   ports:
-    - port: 80
+    - port: 8080
       targetPort: 8080
