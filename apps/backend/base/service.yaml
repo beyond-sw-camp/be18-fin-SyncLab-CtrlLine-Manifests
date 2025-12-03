@@ -4,7 +4,9 @@ metadata:
   name: backend
 spec:
   selector:
+    app: backend
     color: blue   # 기본 BLUE로 시작
   ports:
-    - port: 8080
+    - port: 80
       targetPort: 8080
+  type: ClusterIP
