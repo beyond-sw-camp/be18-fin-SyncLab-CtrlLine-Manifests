@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 980921712223.dkr.ecr.ap-northeast-2.amazonaws.com/ctrlline-backend:main-1af2c280180cd6555338969c7b9376893c7d96f3
+          image: 980921712223.dkr.ecr.ap-northeast-2.amazonaws.com/ctrlline-backend:main-bcf1153de21bc12bdaf5ba016f4fb070cd382420
