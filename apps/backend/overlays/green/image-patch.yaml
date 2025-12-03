@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: backend
-          image: synklabshareacc/ctrlline-staging:64dbb1
+          image: 980921712223.dkr.ecr.ap-northeast-2.amazonaws.com/ctrlline-backend:main-bcf1153de21bc12bdaf5ba016f4fb070cd382420
