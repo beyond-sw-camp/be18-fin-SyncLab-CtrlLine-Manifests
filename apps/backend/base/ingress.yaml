@@ -7,6 +7,11 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip   # ✅ 이 한 줄 추가
     alb.ingress.kubernetes.io/healthcheck-path: /actuator/health
+
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80}, {"HTTPS":443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:980921712223:certificate/a2ec7fe0-a9f0-41cb-9cb3-45e1352cffcb
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+
 spec:
   rules:
     - host: backend.ctrlline.shop
