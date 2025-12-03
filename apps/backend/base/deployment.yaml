@@ -23,7 +23,8 @@ spec:
         - name: backend
           image: 980921712223.dkr.ecr.ap-northeast-2.amazonaws.com/ctrlline-backend:main-bcf1153de21bc12bdaf5ba016f4fb070cd382420
           ports:
-            - containerPort: 8080
+            - name: http
+              containerPort: 8080
           
           args:
             - "--spring.profiles.active=prod"
