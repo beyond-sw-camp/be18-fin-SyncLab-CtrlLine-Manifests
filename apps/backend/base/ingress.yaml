@@ -7,7 +7,8 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
 spec:
   rules:
-    - http:
+    - host: backend.ctrlline.shop
+      http:
         paths:
           - path: /
             pathType: Prefix
