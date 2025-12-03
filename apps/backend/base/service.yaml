@@ -4,7 +4,7 @@ metadata:
   name: backend
 spec:
   selector:
-    app: backend-blue   # 또는 backend-green 중 active
+    color: blue   # 기본 BLUE로 시작
   ports:
     - port: 80
       targetPort: 8080

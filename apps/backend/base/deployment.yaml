@@ -12,10 +12,12 @@ spec:
   selector:
     matchLabels:
       app: backend
+      color: PLACEHOLDER   # overlay에서 override
   template:
     metadata:
       labels:
         app: backend
+        color: PLACEHOLDER
     spec:
       containers:
         - name: backend
