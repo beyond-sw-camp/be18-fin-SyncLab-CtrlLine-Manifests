@@ -14,16 +14,16 @@ spec:
   selector:
     matchLabels:
       app: backend
-      color: PLACEHOLDER   # overlay에서 override
+      color: green   # overlay에서 override
   template:
     metadata:
       labels:
         app: backend
-        color: PLACEHOLDER
+        color: green
     spec:
       containers:
         - name: backend
-          image: REPLACE_IMAGE
+          image: 980921712223.dkr.ecr.ap-northeast-2.amazonaws.com/ctrlline-backend:main-bcf1153de21bc12bdaf5ba016f4fb070cd382420
           ports:
             - containerPort: 8080
           
