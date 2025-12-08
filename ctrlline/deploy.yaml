@@ -32,6 +32,13 @@ spec:
               name: global-config
           - secretRef:
               name: ctrlline-secret
+        volumeMounts:
+          - name: serial-storage
+            mountPath: /var/ctrlline/serials
+      volumes:
+      - name: serial-storage
+        persistentVolumeClaim:
+          claimName: ctrlline-serial-pvc
         # startupProbe:
         #   httpGet:
         #     path: /actuator/health
