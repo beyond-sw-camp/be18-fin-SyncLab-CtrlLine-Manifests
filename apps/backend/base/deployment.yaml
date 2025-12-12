@@ -22,7 +22,7 @@ spec:
       serviceAccountName: ctrlline-serial-sa
       containers:
         - name: backend
-          image: 980921712223.dkr.ecr.ap-northeast-2.amazonaws.com/ctrlline-backend:main-d8fe9c81479666c4f06f09f2bde2de668a21e556
+          image: 980921712223.dkr.ecr.ap-northeast-2.amazonaws.com/ctrlline-backend:main-42ccfb2b10b766e396bbd385095596a74dcbfdef
           ports:
             - name: http
               containerPort: 8080
